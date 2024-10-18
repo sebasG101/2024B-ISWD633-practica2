@@ -2,7 +2,7 @@
 ### ¿Qué son las variables de entorno
 # COMPLETAR
 
-### Para crear un contenedor con variables de entorno
+### Para crear un contenedor con variables de entorno?
 
 ```
 docker run -d --name <nombre contenedor> -e <nombre variable1>=<valor1> -e <nombre variable2>=<valor2>
