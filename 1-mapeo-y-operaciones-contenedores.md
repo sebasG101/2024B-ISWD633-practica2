@@ -42,7 +42,7 @@ El comando **docker exec** te permite acceder a la sesión shell de un contenedo
 Para saber qué comando utilizar para abrir una terminal dentro de un contenedor, es útil conocer la imagen base del contenedor, ya que diferentes imágenes pueden usar diferentes shells o comandos para abrir una terminal. Puedes verificar la documentación de la imagen del contenedor en Docker Hub o en el repositorio de la imagen para obtener información específica sobre cómo abrir una terminal en esa imagen.
 - Para imágenes basadas en Debian o Ubuntu, puedes probar con bash.
 - Para imágenes basadas en Alpine Linux, puedes probar con sh.
-![Imagen](imagenes/jenkins-i.PNG)
+![Imagen](img/jenkins-i.PNG)
 ```
 docker exec -i <nombre contenedor> <programa o comando>
 ```
@@ -78,7 +78,7 @@ El problema se debe a que no se ha asignado un terminal de salida al contenedor 
 ### Para ejecutar un shell interactivo bidireccional en un contenedor de Docker especificado.
 Ejecutar un shell interactivo bidireccional en un contenedor de Docker significa abrir una sesión de shell en el contenedor que permite la interacción bidireccional entre la terminal local y el contenedor. Es decir, puedes enviar comandos desde tu terminal local al contenedor y recibir la salida de esos comandos de vuelta en tu terminal local, al igual que si estuvieras trabajando directamente en la terminal del contenedor.
 
-![Imagen](imagenes/jenkins-it.PNG)
+![Imagen](img/jenkins-it.PNG)
 ```
 docker exec -i-t <nombre contenedor> <programa o comando>
 ```
