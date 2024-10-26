@@ -19,8 +19,8 @@ La figura presenta el esquema creado en donde los puertos son:
 ## Desde el cliente
 ### Acceder desde el cliente al servidor postgres creado.
 # COMPLETAR CON UNA CAPTURA DEL LOGIN
-![Imagen3](img/3.PNG)
-![Imagen3.1](img/3.1.PNG)
+![Imagen3](https://github.com/sebasG101/2024B-ISWD633-practica2/blob/main/img/3.png?raw=true)
+![Imagen3.1](https://github.com/sebasG101/2024B-ISWD633-practica2/blob/main/img/3.1.png?raw=true)
 ### Crear la base de datos info, y dentro de esa base la tabla personas, con id (serial) y nombre (varchar), agregar un par de registros en la tabla, obligatorio incluir su nombre.
 ```
 CREATE TABLE personas (
@@ -32,7 +32,7 @@ INSERT INTO personas (nombre) VALUES
 ('Pedro Pascal');
 
 ```
-![Imagen3.3](img/3.3.PNG)
+![Imagen3.3](https://github.com/sebasG101/2024B-ISWD633-practica2/blob/main/img/3.3.png?raw=true)
 ## Desde el servidor postgresl
 ### Acceder al servidor
 
@@ -46,4 +46,4 @@ docker exec -it postgres-cont sh
 info=# select * from personas;
 ```
 ### Realizar un select *from personas
-![Imagen3.4](img/3.4.PNG)
+![Imagen3.4](https://github.com/sebasG101/2024B-ISWD633-practica2/blob/main/img/3.4.png?raw=true)

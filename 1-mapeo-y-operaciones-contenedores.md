@@ -18,7 +18,7 @@ No puedes mapear puertos a un contenedor existente directamente después de su c
 ```
 docker run -d --name srv-jenkins --publish published=8080,target=8080 --publish published=50000,target=50000 jenkins/jenkins:alpine3.18-jdk11
 ```
-![Imagen1](img/1.%20jenkins_testeo.png)
+![Imagen1](https://github.com/sebasG101/2024B-ISWD633-practica2/blob/main/img/1.%20jenkins_testeo.png?raw=true)
 
 ### ¿Cómo obtener la contraseña solicitada?
 Para obtener la contraseña solicitada es necesario ingresar al contenedor.
@@ -43,7 +43,7 @@ El argumento -l, muestra información detallada como los permisos, propietario, 
 ```
 docker exec srv-jenkins ls -l
 ```
-![Imagen2](img/2_jenkins_comando_ls.PNG)
+![Imagen2](https://github.com/sebasG101/2024B-ISWD633-practica2/blob/main/img/2_jenkins_comando_ls.png?raw=true)
 
 
 ### Para ejecutar un shell interactivo en un contenedor de Docker especificado.
@@ -78,7 +78,7 @@ Ejecutar
 ```
 whoami
 ```
-![Imagen3](img/3_jenkins_ejecucionComandos.png)
+![Imagen3](https://github.com/sebasG101/2024B-ISWD633-practica2/blob/main/img/3_jenkins_ejecucionComandos.png?raw=true)
 
 **Si se visualiza el mensaje command not found, considerar**
 El problema se debe a que no se ha asignado un terminal de salida al contenedor al ejecutar el comando. Cuando usas docker exec -i jenkins-server /bin/bash en Windows, el comando se ejecuta pero no hay un terminal asignado para mostrar la salida del comando ls.
@@ -107,7 +107,7 @@ cat /var/jenkins_home/secrets/initialAdminPassword
 
 ### Colocar una captura de pantalla de la ventana que aparece después de colocar la contraseña.
 
-![Imagen5](img/5_jenkins_Password.PNG)
+![Imagen5](https://github.com/sebasG101/2024B-ISWD633-practica2/blob/main/img/5_jenkins_Password.png?raw=true)
 
 **Para este punto no es necesario continuar con la instalación de Jenkins**
 

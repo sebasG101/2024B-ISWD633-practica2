@@ -22,7 +22,7 @@ docker exec -it srv-nginx sh
 
 # CAPTURA CON LA COMPROBACIÓN DE LA CREACIÓN DE LAS VARIABLES DE ENTORNO DEL CONTENEDOR ANTERIOR
 
-![Imagen2.1](img/2.1%20variablesE.png)
+![Imagen2.1](https://github.com/sebasG101/2024B-ISWD633-practica2/blob/main/img/2.1%20variablesE.png?raw=true)
 
 ### Crear un contenedor con mysql:8 , mapear todos los puertos
 ```
@@ -62,7 +62,7 @@ docker run -d --name mysql-cont --env-file=./mysql_docker_config.env mysql:8
 
 # CAPTURA CON LA COMPROBACIÓN DE LA CREACIÓN DE LAS VARIABLES DE ENTORNO DEL CONTENEDOR ANTERIOR 
 
-![Imagen2.2](img/2.2Variablesmysql.png)
+![Imagen2.2](https://github.com/sebasG101/2024B-ISWD633-practica2/blob/main/img/2.2Variablesmysql.png?raw=true)
 
 ### ¿Qué bases de datos existen en el contenedor creado?
 ```
@@ -73,4 +73,4 @@ bash# mysql -u root -p
 
 mysql> show databases;
 ```
-![Imagen2.3](img/2.3BD.png)
+![Imagen2.3](https://github.com/sebasG101/2024B-ISWD633-practica2/blob/main/img/2.3BD.png?raw=true)
